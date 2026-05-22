@@ -29,12 +29,12 @@ export class ReservasService {
         'Os campos resposanvel, sala, turno e integrantes sao obrigatorios',
       );
     }
-    if (!reserva.sala) {
+    if (!['azul', 'verde', 'vermelha'].includes(reserva.sala)) {
       throw new ForbiddenException(
         'O campo sala precisa ser azul verde ou vermelha',
       );
     }
-    if (!reserva.turno) {
+    if (!['manha', 'tarde', 'noite'].includes(reserva.turno)) {
       throw new ForbiddenException(
         'O campo turno precisa ser manha tarde ou noite',
       );
@@ -78,5 +78,9 @@ export class ReservasService {
     if (reserva.status == 'encerrada' || reserva.status == 'cancelada') {
       throw new ForbiddenException('essa reserva nao pode ser alterada');
     }
+    const atualizado = { ...reservaProcurada, ...reserva };
+    this.reservas = this.reservas.map((p) => (p.id === id ? atualizado : p));
+
+    return atualizado;
   }
 }

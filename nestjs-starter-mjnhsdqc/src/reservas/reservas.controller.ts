@@ -31,5 +31,5 @@ export class ReservasController {
 },
 ) {
   return this.reservas.atualizarParcialmente(id, body);
-})
+}
 }
