@@ -1,0 +1,88 @@
+{
+  "program": {
+    "fileInfos": {
+      "../src/app.service.ts": {
+        "version": "5d4242d50092a353e5ab1f06663a89dbc714c7d9d70072ea03c83c5b14750f05",
+        "signature": "d8f4cb0109c1b399d657807fd6af504d74a9300325e0fc915abdbf658b464a97",
+        "affectsGlobalScope": false
+      },
+      "../src/app.controller.ts": {
+        "version": "3469c5aa62e1ba5b183d9bb9d40193e91aa761fc5734d332650b0bd49c346266",
+        "signature": "3293b0d1d6a7f902316e164fcf36ae099f1bbb0224484586eaab30d9dea78d32",
+        "affectsGlobalScope": false
+      },
+      "../src/reservas/reservas.service.ts": {
+        "version": "7db0b0fce6e6ed005f98f01ce2dc907872b76aecec766b0f9012b5a13078b048",
+        "signature": "3e3933eb564ae486eda691058440878d83ff2dc5672bcd5e25851d2ce45122cf",
+        "affectsGlobalScope": false
+      },
+      "../src/reservas/reservas.controller.ts": {
+        "version": "1f2117659b3b9fe85dceca5f49eeacfd064162ffce8a84f83eab1c5b94ce60d8",
+        "signature": "f691777b9bdee0758fef060d218d4abdb4f908e636bb55b55344be10f7c5bd7a",
+        "affectsGlobalScope": false
+      },
+      "../src/reservas/reservas.module.ts": {
+        "version": "6cb3d44b067d8e9f656a42f26cacf1bd571936fff4826a81ff57f9483dd03b49",
+        "signature": "5a106e2111f3c2b2a8118a81d727fe3dcec952ea425c2b3f7a4f1dbd82b09241",
+        "affectsGlobalScope": false
+      },
+      "../src/app.module.ts": {
+        "version": "aeb461fb775244060f9386b7febdbeea49b57fb3f3b55cbdd622dd0d97fad7ae",
+        "signature": "9fc7f7b6ad854404973b8cba8e6d883f758237991968e9a3965d716d46f1da88",
+        "affectsGlobalScope": false
+      },
+      "../src/main.ts": {
+        "version": "3c8967198a459fe0868276c735fb4ecbe75c3ed2bbda02d4dcee787c5c448528",
+        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
+        "affectsGlobalScope": false
+      }
+    },
+    "options": {
+      "module": 1,
+      "declaration": true,
+      "removeComments": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "allowSyntheticDefaultImports": true,
+      "target": 4,
+      "sourceMap": true,
+      "outDir": "./",
+      "baseUrl": "..",
+      "incremental": true,
+      "configFilePath": "../tsconfig.build.json"
+    },
+    "referencedMap": {
+      "../src/app.controller.ts": [
+        "../src/app.service.ts"
+      ],
+      "../src/app.module.ts": [
+        "../src/app.controller.ts",
+        "../src/app.service.ts",
+        "../src/reservas/reservas.module.ts"
+      ],
+      "../src/main.ts": [
+        "../src/app.module.ts"
+      ],
+      "../src/reservas/reservas.controller.ts": [
+        "../src/reservas/reservas.service.ts"
+      ],
+      "../src/reservas/reservas.module.ts": [
+        "../src/reservas/reservas.controller.ts",
+        "../src/reservas/reservas.service.ts"
+      ],
+      "../src/reservas/reservas.service.ts": [
+        "../src/reservas/reservas.controller.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "../src/app.controller.ts": [
+        "../src/app.service.ts"
+      ],
+      "../src/reservas/reservas.controller.ts": [
+        "../src/reservas/reservas.service.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": []
+  },
+  "version": "4.2.3"
+}
